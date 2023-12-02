@@ -45,7 +45,7 @@ function NewComment() {
 								/>
 								
 							</div>
-							<input className="btn btn-primary" type="submit" value="Add Comment" />
+							<input className="btn btn-primary" type="submit" value="Add Recipe" />
 						</form>
 					</main>
 				</Card.Body>

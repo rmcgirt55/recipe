@@ -91,7 +91,7 @@ function Recipes() {
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>{menu.recipename}</Accordion.Header>
                                         <Accordion.Body>
-                                            <div className="container my-5 ">
+                                            <div className="container my-5">
                                                 <div className="card row flex-row-reverse">
                                                     <img className="col-lg-4 card-img-end img-fluid p-0" src={menu.image} />
                                                     <div className="col-lg-8 card-body">

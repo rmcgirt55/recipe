@@ -57,7 +57,7 @@ function HeaderBar() {
     <Navbar bg="light" expand="lg">
       <Container fluid>
         
-        <Navbar.Brand className="text-wrap"><b>"CulinaryCanvas""</b></Navbar.Brand>
+        <Navbar.Brand className="text-wrap"><b>"Unveiling culinary creativity, one recipe at a time"</b></Navbar.Brand>
         {loginActions}
       </Container>
     </Navbar>
@@ -65,3 +65,4 @@ function HeaderBar() {
 }
 
 export default HeaderBar;
+
