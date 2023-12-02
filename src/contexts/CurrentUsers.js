@@ -7,11 +7,17 @@ function CurrentUserProvider({ children }) {
     const [currentUser, setCurrentUser] = useState(null)
 
     useEffect(() => {
+        
         const getLoggedInUser = async () => {
-            let response = await fetch('https://recipesharingbackend.herokuapp.com/api/auth', {
+            console.log("S")
+            let response = await fetch('https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/auth/', {
+                //set get method 
+                method: 'GET',
+
                 headers: {
-                    'x-auth-token': localStorage.getItem('token')
-                }
+                    'auth-token': localStorage.getItem('token')
+                }, 
+                
             })
             let user = await response.json()
             setCurrentUser(user)
