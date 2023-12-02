@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router"
 import background from "../backgroundImages/colorfulpeppers.png"
-
+import API_URL from "../constants"
 
 function SignUpForm() {
 
@@ -19,7 +19,7 @@ function SignUpForm() {
 		e.preventDefault()
 
 
-		const response = await fetch(`https://recipesharingbackend.herokuapp.com/api/users/`, {
+		const response = await fetch("https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/signup/", {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

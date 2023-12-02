@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
 import { useNavigate } from "react-router"
 import { CurrentUser } from "../contexts/CurrentUser"
-
+import API_URL from "../constants"
 function LoginForm() {
 
     const navigate = useNavigate()
@@ -9,7 +9,7 @@ function LoginForm() {
     const { setCurrentUser } = useContext(CurrentUser)
     
     const [credentials, setCredentials] = useState({
-        email: '',
+        username: '',
         password: ''
     })
 
@@ -17,7 +17,7 @@ function LoginForm() {
 
     async function handleSubmit(e) {
         e.preventDefault()
-        const response = await fetch(`https://recipesharingbackend.herokuapp.com/api/auth`, {
+        const response = await fetch("https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/signin/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -59,13 +59,13 @@ function LoginForm() {
             <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-sm-6 form-group">
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email">username</label>
                         <input
-                            type="email"
+                            type="text"
                             required
                             value={credentials.email}
-                            placeholder=" Please enter your email"
-                            onChange={e => setCredentials({ ...credentials, email: e.target.value })}
+                            placeholder=" Please enter your username"
+                            onChange={e => setCredentials({ ...credentials, username: e.target.value })}
                             className="form-control"
                             id="email"
                             name="email"
@@ -87,7 +87,7 @@ function LoginForm() {
                 </div>
                 <input className="loginbtn" type="submit" value="Login" />
             </form>
-          
+            Photo by <a href="https://unsplash.com/@thoughtcatalog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thought Catalog</a> on <a href="https://unsplash.com/s/photos/smashed-plate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </main>
     )
 }
