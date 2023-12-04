@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.HangryLogo {
+  height: 15vh;
+  width: 18vh;
+}
+.justify-content-center {
+  background-color: rgb(252, 207, 60);
+  font-weight: bolder;
+  color: black;
+
+  
+}
+
+.login {
+  background-color: rgb(237, 124, 26);
+  color: white;
+  border-color: rgb(237, 124, 26);
+  text-align: center;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin: 5px;
+}
+.signup {
+  background-color: rgb(252, 157, 40);
+  color: white;
+  border-color: rgb(252, 157, 40);
+  text-align: center;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin: 5px;
+}
+.signupbtn {
+  background-color: rgb(252, 157, 40);
+  color: white;
+  border-color: rgb(252, 157, 40);
+  text-align: center;
+  border-radius: 10%;
+  height: 40px;
+  width: 75px;
+  margin: 5px;
+}
+.loginbtn {
+  background-color: rgb(237, 124, 26);
+  color: white;
+  border-color: rgb(237, 124, 26);
+  text-align: center;
+  border-radius: 10%;
+  height: 40px;
+  width: 75px;
+  margin: 5px;
+}
+
+.searchbtn {
+  background-color: rgb(237, 124, 26);
+  color: white;
+  border-color: rgb(237, 124, 26);
+  text-align: center;
+  border-radius: 10%;
+  height: 40px;
+  width: 75px;
+  margin: 5px;
+}
+
+.addrecipebtn {
+  background-color: rgb(237, 124, 26);
+  color: white;
+  border-color: rgb(237, 124, 26);
+  text-align: center;
+  border-radius: 10%;
+  height: 40px;
+  width: 100px;
+  margin: 5px;
+}
+
+.deletebtn {
+  background-color: rgb(242, 91, 9);
+  color: white;
+  border-color: rgb(242, 91, 9);
+  text-align: center;
+  border-radius: 10%;
+  height: 40px;
+  width: 150px;
+  margin: 5px;
+}
+
+.editbtn {
+  background-color: rgb(255, 244, 96);
+  border-color: rgb(255, 244, 96);
+  text-align: center;
+  border-radius: 10%;
+  height: 40px;
+  width: 150px;
+  margin: 5px;
+}
+.signupimg {
+  position: relative;
+}
+.signupimg::after {
+  content: '';
+  background-image: url('/src/backgroundImages/colorfulpeppers.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
+  z-index: -1;
+}
+.loginimg {
+  position: relative;
+}
+.loginimg::after {
+  content: '';
+  background-image: url('/src/backgroundImages/nathanunsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+
+.nutrtion{
+  color: rgb(242, 91, 9)
+}
+
+.aboutbg {
+  background-color: rgb(255, 244, 96);
+}
+
+.addbacktorecipebtn {
+  background-color: rgb(237, 124, 26);
+  color: white;
+  border-color: rgb(237, 124, 26);
+  text-align: center;
+  border-radius: 10%;
+  height: 40px;
+  width: 200px;
+  margin: 5px;
+}
